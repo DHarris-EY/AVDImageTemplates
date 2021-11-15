@@ -48,7 +48,7 @@ Function EY-Main {
 		
         new-item -Path "C:\ProgramData" -ItemType Directory -name EYWVD -Force -ErrorAction Stop
 
-        $SASToken = "?sv=2020-02-10&ss=f&srt=o&sp=rl&se=2021-12-31T19:39:34Z&st=2021-03-22T11:39:34Z&spr=https&sig=xWQTQjt1DoXjc0114ilYOQS3fQtX7swkTLcaC8%2FhDqY%3D"
+        #$SASToken = ""
         write-EYLog "Attempting to download from URL: $URL"
         $Zip = [System.IO.Path]::GetFileName($URL)
         write-EYLog "Zip name is $Zip"
